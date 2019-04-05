@@ -37,10 +37,6 @@ li{
 
 
 /* CABEÇALHO */
-.cabecalho{
-    
-}
-
 .navegacao{
     background-color: #674582;
 }
@@ -131,7 +127,6 @@ li{
 .introducao__foto{
     border-radius: 15px;
     width: 100%;
-
 }
 
 .introducao__paragrafo{
@@ -160,10 +155,6 @@ li{
 
 .historia__imagem{
     width: 100%;
-}
-
-.historia__container{
-
 }
 
 /* AUTORA */
@@ -331,7 +322,5 @@ li{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-
     }
-    
+}
