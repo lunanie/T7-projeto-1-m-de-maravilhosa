@@ -30,9 +30,6 @@ li{
 }
 
 /* CABEÇALHO */
-.cabecalho{
-    
-}
 .navegacao{
     background-color: #674582;
 }
@@ -55,26 +52,20 @@ li{
 .img-responsive {
     max-width: 200px;
 }
-
 .navegacao__nav {
     padding-top:50px;
     margin-bottom: 3rem;
     margin-right: 2rem;
 }
-
 .navegacao__li{
     display: inline;
 }
-
 .navegacao__redes-sociais{
     margin-right: 30px;
 }
-
-
 #btnResponsivo{
     display: none;
 }
-
 /* BANNER */
 .banner{
     background-image: url(../img/banner.jpg);
@@ -90,12 +81,12 @@ li{
     letter-spacing: 5px;
     margin-top:38px;
 }
-
 .banner h1{
     margin-top:350px;
-    font-size: 45px;
+    font-size: 50px;
+    font-weight: 800;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
-
 /* INTRODUÇÃO */
 .introducao{
     color: #63458a;
@@ -107,13 +98,11 @@ li{
     font-weight: bold;
     color: #63458a;
 }
-
 .introducao__conteudo{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .introducao__fotoeparagrafo{
     display: flex;
 }
@@ -128,40 +117,30 @@ li{
 .introducao__divparagrafo a{
     font-weight: bold;
 }
-
 .introducao__foto{
     border-radius: 15px;
     width: 100%;
 }
-
 .introducao__paragrafo{
     padding:30px;
 }
-
 /* HISTÓRIA */
 .historia{
     color: #63458a;
     margin-top: 30px;
 }
-
 .historia h2{
     text-align: center;
 }
-
 .historia__imagem{
     width: 100%;
+    border-radius: 15px;
 }
-
-.historia__container{
-
-}
-
 /* AUTORA */
 .outrasmaravilhosas{
     color: #674582;
     text-align: center;
 }
-
 .outrasmaravilhosas h2{
     padding: 30px;
 }
@@ -172,10 +151,20 @@ li{
     justify-content: center;
     text-align: center;
 }
+.maravilhosas__perfil{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
 
+.maravilhosas__perfil p{
+    font-weight: bold;
+    font-size: 18px;
+}
 .img-responsive {
     width: 100%;
-  }
+    border-radius: 15px;
+}
 
 #linhahorizontal{
     border: 1px solid  #674582;
@@ -190,7 +179,6 @@ li{
     padding-bottom: 60px;
     padding-top: 60px;
 }
-
 .outraspersonalidades__botao{
     background-color: #C083B9;
     border: none;
@@ -206,21 +194,18 @@ li{
 .final{
     background-color:#323534;
 }
-
 .final__rodape{
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 20vh;
 }
-
 .final__navegacao li{
     text-decoration: none;
     text-align: center;
     padding:0;
     margin:0;
 }
-
 .fbicon{
     max-height: 30px;
 }
@@ -232,18 +217,21 @@ li{
     padding: 1px;
     text-align: center;
 }
-
 .rodape__maravilhosas{
     color:white;
 }
 
 @media (max-width: 768px) {
     /* --- NAV --- */
-
+    .banner h1{
+        margin-top:350px;
+        font-size: 30px;
+        font-weight: 800;
+        text-shadow: black 0.1em 0.1em 0.2em
+    }    
     .navegacao__redes-sociais {
         display: none
-    }
-    
+    }    
     .navegacao__nav{
         display: none;
     }
@@ -251,21 +239,17 @@ li{
         display: flex;
         padding: 30px;
     }
-
     .autora__container{
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-    }
-    
+    }    
     .autora__foto{
         max-width: 80%;
-    }
-    
+    }    
     .autora__nome{
         width: 100%;
     }
-
     .final__rodape{
         padding-top: 15px;
         padding-bottom: 55px;
@@ -287,20 +271,21 @@ li{
         font-weight: bold;
         color: #63458a;
     }
-    
     .introducao__conteudo{
         align-items: center;
         justify-content: center;
     }
-    
     .introducao__divfoto{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .introducao__divparagrafo{
-        width: 100%;
-        }
     .introducao__foto{
         border-radius: 15px;
+        max-width: 200px;
+        }
+    .introducao__divparagrafo{
         width: 100%;
         }
     .introducao__paragrafo{
@@ -315,4 +300,4 @@ li{
     .outrasmaravilhosas__div{
         flex-direction: column;
     }
-    }
+}
